@@ -1,2 +1,5 @@
 ﻿  CaesarSubstitution.cpp
+C:\Users\erik\OneDrive\Dokumente\Informatik\Projekte\C++\CaesarSubstitution2.0\CaesarSubstitution2.0\CaesarSubstitution.cpp(20,30): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Program.cpp
+  Generating Code...
   CaesarSubstitution2.0.vcxproj -> C:\Users\erik\OneDrive\Dokumente\Informatik\Projekte\C++\CaesarSubstitution2.0\x64\Debug\CaesarSubstitution2.0.exe

@@ -17,16 +17,17 @@ void CaesarSubstitution::handleUserInput(string option)
 		c = toupper(c);
 	}
 
+	m_textlength = text.length();
+
 	for (auto c : text) {
 		m_textArr.push_back(c);
 	}
-
+	string sKey;
 	cout << "Please enter a key: ";
-	cin >> m_sKey;
+	cin >> sKey;
 
-	if (m_sKey == "exit") exit(0);
-	m_key = stoi(m_sKey);
-	
+	if (sKey == "exit") exit(0);
+	m_key = stoi(sKey);
 }
 
 void CaesarSubstitution::encrypt() 
@@ -60,12 +61,9 @@ void CaesarSubstitution::decrypt()
 	}
 	string str;
 
-	for (char c : m_textArr) {
-		str += c;
+	for (int i = 0;i < m_textlength;i++) {
+		str += m_textArr[i];
 	}
-
-	cout << sizeof(m_textArr) << "str: " << sizeof(str) << endl;
-	
 	cout << "Decrypted: " << m_inputText << endl;
 	cout << "To: " << str << endl;
 	cout << "Using key: " << m_key << endl;

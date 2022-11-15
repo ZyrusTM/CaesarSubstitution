@@ -10,8 +10,8 @@ class CaesarSubstitution
 private:
 	string m_inputText;
 	vector<char> m_textArr;
-	string m_sKey;
 	int m_key;
+	int m_textlength;
 public:
 	void handleUserInput(string option);
 	void encrypt();
