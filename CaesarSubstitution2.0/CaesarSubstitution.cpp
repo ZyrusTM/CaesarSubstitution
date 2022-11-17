@@ -64,6 +64,7 @@ void CaesarSubstitution::decrypt()
 	for (int i = 0;i < m_textlength;i++) {
 		decText += m_textArr[i];
 	}
+
 	cout << "Decrypted: " << m_inputText << endl;
 	cout << "To: " << decText << endl;
 	cout << "Using key: " << m_key << endl;
